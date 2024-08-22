@@ -1,0 +1,57 @@
+﻿@model HRmanagement.Models.Employee
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>CreateEmployee</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-sm-8 offset-2 mt-3">
+        <form asp-action="CreateEmployee">
+
+            <div class="form-group">
+                <label asp-for="Emp_Name" class="control-label">Name</label>
+                <input asp-for="Emp_Name" class="form-control" />
+                <span asp-validation-for="Emp_Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Emp_Title" class="control-label">Title</label>
+                <input asp-for="Emp_Title" class="form-control" />
+                <span asp-validation-for="Emp_Title" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Emp_Department" class="control-label">Department</label>
+                <input asp-for="Emp_Department" class="form-control" />
+                <span asp-validation-for="Emp_Department" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Emp_Email" class="control-label">Email</label>
+                <input asp-for="Emp_Email" class="form-control" />
+                <span asp-validation-for="Emp_Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Emp_Phone" class="control-label">Phone</label>
+                <input asp-for="Emp_Phone" class="form-control" />
+                <span asp-validation-for="Emp_Phone" class="text-danger"></span>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+        <br />
+        <a class="btn btn-dark" asp-action="Home">Back to List</a>
+
+    </div>
+</div>
+
+
