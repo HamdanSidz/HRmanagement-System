@@ -99,6 +99,7 @@ namespace HRmanagement.Controllers
             _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
             return RedirectToAction("Home");
+
         }
     }
 }
